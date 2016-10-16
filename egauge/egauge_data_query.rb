@@ -18,6 +18,7 @@ def with_xml
 	puts "With XML .\n\n"
  
   begin
+  	
     url = 'http://maps.googleapis.com/maps/api/geocode/xml?address=1400+Broadway,+New+York,+NY&sensor=false'
     response = RestClient.get(url)
 
