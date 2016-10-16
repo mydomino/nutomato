@@ -66,5 +66,5 @@ end
 
 
 
-#get_instant_data
-get_stored_data
+get_instant_data
+#get_stored_data
