@@ -47,11 +47,20 @@ def get_stored_data
 
     puts "\nResponse is: #{response}\n"
 
-    hash_xml = XmlSimple.xml_in(response.body)
+    hash_xml = XmlSimple.xml_in(response)
+    hash_xml_body = XmlSimple.xml_in(response.body)
   
     # pretty print to screen
-    puts "\nPretty print the output\n"
-    ap(hash_xml)
+    # puts "\nPretty print the output\n"
+    # ap(hash_xml)
+
+    #pretty print with JSON
+    puts "\nPretty print the output with JSON\n"
+    puts JSON.pretty_generate(hash_xml)
+
+    puts "\nPretty print the XML body with JSON\n"
+    puts JSON.pretty_generate(hash_xml_body)
+
 
   rescue => e
   	puts "\nError! #{e}\n"
@@ -66,5 +75,5 @@ end
 
 
 
-get_instant_data
-#get_stored_data
+#get_instant_data
+get_stored_data
