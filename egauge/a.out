@@ -1,0 +1,251 @@
+With XML .
+
+
+Response is: <?xml version="1.0" encoding="UTF-8"?>
+<GeocodeResponse>
+ <status>OK</status>
+ <result>
+  <type>street_address</type>
+  <formatted_address>1400 Broadway, New York, NY 10018, USA</formatted_address>
+  <address_component>
+   <long_name>1400</long_name>
+   <short_name>1400</short_name>
+   <type>street_number</type>
+  </address_component>
+  <address_component>
+   <long_name>Broadway</long_name>
+   <short_name>Broadway</short_name>
+   <type>route</type>
+  </address_component>
+  <address_component>
+   <long_name>Midtown</long_name>
+   <short_name>Midtown</short_name>
+   <type>neighborhood</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>Manhattan</long_name>
+   <short_name>Manhattan</short_name>
+   <type>political</type>
+   <type>sublocality</type>
+   <type>sublocality_level_1</type>
+  </address_component>
+  <address_component>
+   <long_name>New York</long_name>
+   <short_name>New York</short_name>
+   <type>locality</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>New York County</long_name>
+   <short_name>New York County</short_name>
+   <type>administrative_area_level_2</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>New York</long_name>
+   <short_name>NY</short_name>
+   <type>administrative_area_level_1</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>United States</long_name>
+   <short_name>US</short_name>
+   <type>country</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>10018</long_name>
+   <short_name>10018</short_name>
+   <type>postal_code</type>
+  </address_component>
+  <geometry>
+   <location>
+    <lat>40.7528770</lat>
+    <lng>-73.9866900</lng>
+   </location>
+   <location_type>ROOFTOP</location_type>
+   <viewport>
+    <southwest>
+     <lat>40.7515280</lat>
+     <lng>-73.9880390</lng>
+    </southwest>
+    <northeast>
+     <lat>40.7542260</lat>
+     <lng>-73.9853410</lng>
+    </northeast>
+   </viewport>
+  </geometry>
+  <place_id>ChIJXSMDpqtZwokRex91-mt-_z4</place_id>
+ </result>
+</GeocodeResponse>
+
+
+Pretty print the output
+{
+    "status" => [
+        [0] "OK"
+    ],
+    "result" => [
+        [0] {
+                         "type" => [
+                [0] "street_address"
+            ],
+            "formatted_address" => [
+                [0] "1400 Broadway, New York, NY 10018, USA"
+            ],
+            "address_component" => [
+                [0] {
+                     "long_name" => [
+                        [0] "1400"
+                    ],
+                    "short_name" => [
+                        [0] "1400"
+                    ],
+                          "type" => [
+                        [0] "street_number"
+                    ]
+                },
+                [1] {
+                     "long_name" => [
+                        [0] "Broadway"
+                    ],
+                    "short_name" => [
+                        [0] "Broadway"
+                    ],
+                          "type" => [
+                        [0] "route"
+                    ]
+                },
+                [2] {
+                     "long_name" => [
+                        [0] "Midtown"
+                    ],
+                    "short_name" => [
+                        [0] "Midtown"
+                    ],
+                          "type" => [
+                        [0] "neighborhood",
+                        [1] "political"
+                    ]
+                },
+                [3] {
+                     "long_name" => [
+                        [0] "Manhattan"
+                    ],
+                    "short_name" => [
+                        [0] "Manhattan"
+                    ],
+                          "type" => [
+                        [0] "political",
+                        [1] "sublocality",
+                        [2] "sublocality_level_1"
+                    ]
+                },
+                [4] {
+                     "long_name" => [
+                        [0] "New York"
+                    ],
+                    "short_name" => [
+                        [0] "New York"
+                    ],
+                          "type" => [
+                        [0] "locality",
+                        [1] "political"
+                    ]
+                },
+                [5] {
+                     "long_name" => [
+                        [0] "New York County"
+                    ],
+                    "short_name" => [
+                        [0] "New York County"
+                    ],
+                          "type" => [
+                        [0] "administrative_area_level_2",
+                        [1] "political"
+                    ]
+                },
+                [6] {
+                     "long_name" => [
+                        [0] "New York"
+                    ],
+                    "short_name" => [
+                        [0] "NY"
+                    ],
+                          "type" => [
+                        [0] "administrative_area_level_1",
+                        [1] "political"
+                    ]
+                },
+                [7] {
+                     "long_name" => [
+                        [0] "United States"
+                    ],
+                    "short_name" => [
+                        [0] "US"
+                    ],
+                          "type" => [
+                        [0] "country",
+                        [1] "political"
+                    ]
+                },
+                [8] {
+                     "long_name" => [
+                        [0] "10018"
+                    ],
+                    "short_name" => [
+                        [0] "10018"
+                    ],
+                          "type" => [
+                        [0] "postal_code"
+                    ]
+                }
+            ],
+                     "geometry" => [
+                [0] {
+                         "location" => [
+                        [0] {
+                            "lat" => [
+                                [0] "40.7528770"
+                            ],
+                            "lng" => [
+                                [0] "-73.9866900"
+                            ]
+                        }
+                    ],
+                    "location_type" => [
+                        [0] "ROOFTOP"
+                    ],
+                         "viewport" => [
+                        [0] {
+                            "southwest" => [
+                                [0] {
+                                    "lat" => [
+                                        [0] "40.7515280"
+                                    ],
+                                    "lng" => [
+                                        [0] "-73.9880390"
+                                    ]
+                                }
+                            ],
+                            "northeast" => [
+                                [0] {
+                                    "lat" => [
+                                        [0] "40.7542260"
+                                    ],
+                                    "lng" => [
+                                        [0] "-73.9853410"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+                     "place_id" => [
+                [0] "ChIJXSMDpqtZwokRex91-mt-_z4"
+            ]
+        }
+    ]
+}
