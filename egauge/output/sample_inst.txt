@@ -1,0 +1,76 @@
+eGauge Instantaneous Data
+
+Params sent to URL is: http://10.1.10.180/cgi-bin/egauge?tot&inst
+
+Response is: <?xml version="1.0" encoding="UTF-8" ?>
+<data serial="0x493b3724">
+ <ts>1476736246</ts>
+ <r t="P" n="Grid"><v>11167840</v><i>0</i></r>
+ <r t="P" n="Solar"><v>11138716</v><i>0</i></r>
+ <r t="P" n="Solar+"><v>308</v><i>0</i></r>
+ <r rt="total" t="P" n="Total Usage"><v>11168148</v><i>0.000</i></r>
+ <r rt="total" t="P" n="Total Generation"><v>11138716</v><i>0.000</i></r>
+</data>
+
+
+Pretty print the output
+{
+    "serial" => "0x493b3724",
+        "ts" => [
+        [0] "1476736246"
+    ],
+         "r" => [
+        [0] {
+            "t" => "P",
+            "n" => "Grid",
+            "v" => [
+                [0] "11167840"
+            ],
+            "i" => [
+                [0] "0"
+            ]
+        },
+        [1] {
+            "t" => "P",
+            "n" => "Solar",
+            "v" => [
+                [0] "11138716"
+            ],
+            "i" => [
+                [0] "0"
+            ]
+        },
+        [2] {
+            "t" => "P",
+            "n" => "Solar+",
+            "v" => [
+                [0] "308"
+            ],
+            "i" => [
+                [0] "0"
+            ]
+        },
+        [3] {
+            "rt" => "total",
+             "t" => "P",
+             "n" => "Total Usage",
+             "v" => [
+                [0] "11168148"
+            ],
+             "i" => [
+                [0] "0.000"
+            ]
+        },
+        [4] {
+            "rt" => "total",
+             "t" => "P",
+             "n" => "Total Generation",
+             "v" => [
+                [0] "11138716"
+            ],
+             "i" => [
+                [0] "0.000"
+            ]
+        }
+    ]
+}

@@ -4,6 +4,7 @@ require 'json'
 require 'xmlsimple'
 require 'awesome_print'
 
+HOST_IP = '10.1.10.180'
 
 
 def get_instant_data
@@ -12,8 +13,9 @@ def get_instant_data
  
   begin
 
-    #url = 'https://ip/cgi-bin/egauge?tot&inst'
-    url = 'http://maps.googleapis.com/maps/api/geocode/xml?address=1400+Broadway,+New+York,+NY&sensor=false'
+    url = "http://#{HOST_IP}/cgi-bin/egauge?tot&inst&teamstat&v1"
+    
+    puts "\nParams sent to URL is: #{url}"
     response = RestClient.get(url)
 
     puts "\nResponse is: #{response}\n"
@@ -41,10 +43,11 @@ def get_stored_data
  
   begin
 
-    #url = 'https://ip/cgi-bin/egauge?tot&inst'
-    url = 'http://maps.googleapis.com/maps/api/geocode/xml?address=1400+Broadway,+New+York,+NY&sensor=false'
-    response = RestClient.get(url)
+    url = "http://#{HOST_IP}//cgi-bin/egauge-show?a"
 
+    puts "\nParams sent to URL is: #{url}"
+    response = RestClient.get(url)
+ 
     puts "\nResponse is: #{response}\n"
 
     hash_xml = XmlSimple.xml_in(response)

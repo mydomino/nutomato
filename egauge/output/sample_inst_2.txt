@@ -1,0 +1,94 @@
+eGauge Instantaneous Data
+
+Params sent to URL is: http://10.1.10.180/cgi-bin/egauge?tot&inst&teamstat&v1
+
+Response is: <?xml version="1.0" encoding="UTF-8" ?>
+<status serial="0x5193be56">
+ <lag unit="ms">128</lag>
+ <reg>
+  <name>Grid</name>
+  <available>1</available>
+  <last_update>1476742613</last_update>
+  <excess>0</excess>
+  <last_val>11169185</last_val>
+ </reg>
+ <reg>
+  <name>Solar</name>
+  <available>1</available>
+  <last_update>1476742613</last_update>
+  <excess>0</excess>
+  <last_val>11138097</last_val>
+ </reg>
+ <reg>
+  <name>Solar+</name>
+  <available>1</available>
+  <last_update>1476742613</last_update>
+  <excess>0</excess>
+  <last_val>538</last_val>
+ </reg>
+</status>
+
+
+Pretty print the output
+{
+    "serial" => "0x5193be56",
+       "lag" => [
+        [0] {
+               "unit" => "ms",
+            "content" => "128"
+        }
+    ],
+       "reg" => [
+        [0] {
+                   "name" => [
+                [0] "Grid"
+            ],
+              "available" => [
+                [0] "1"
+            ],
+            "last_update" => [
+                [0] "1476742613"
+            ],
+                 "excess" => [
+                [0] "0"
+            ],
+               "last_val" => [
+                [0] "11169185"
+            ]
+        },
+        [1] {
+                   "name" => [
+                [0] "Solar"
+            ],
+              "available" => [
+                [0] "1"
+            ],
+            "last_update" => [
+                [0] "1476742613"
+            ],
+                 "excess" => [
+                [0] "0"
+            ],
+               "last_val" => [
+                [0] "11138097"
+            ]
+        },
+        [2] {
+                   "name" => [
+                [0] "Solar+"
+            ],
+              "available" => [
+                [0] "1"
+            ],
+            "last_update" => [
+                [0] "1476742613"
+            ],
+                 "excess" => [
+                [0] "0"
+            ],
+               "last_val" => [
+                [0] "538"
+            ]
+        }
+    ]
+}
