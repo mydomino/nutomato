@@ -18,7 +18,7 @@ def with_xml
 	puts "With XML .\n\n"
  
   begin
-  	
+
     url = 'http://maps.googleapis.com/maps/api/geocode/xml?address=1400+Broadway,+New+York,+NY&sensor=false'
     response = RestClient.get(url)
 
@@ -132,6 +132,16 @@ def with_default
     response = RestClient.get(url)
     
     puts response
+
+    #resp_body = response.body
+    #puts (response == resp_body)? "\n\nresp_body == resp:TRUE" : "\n\nresp_body == resp:FALSE"
+
+    date_time_str = DateTime.now.strftime('%m-%d-%y_%I:%M:%S%p')
+    puts "\nTime is now #{date_time_str}"
+
+    # write the response to file with time-stamp as file name
+    
+
   rescue => e
   	puts "\nError! #{e}\n"
   
@@ -145,7 +155,7 @@ end
 
 
 
-#with_default
-with_xml()
+with_default
+#with_xml()
 #xml_to_json
 #xml_to_hash
