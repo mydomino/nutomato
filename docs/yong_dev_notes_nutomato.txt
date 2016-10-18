@@ -98,7 +98,27 @@ nokogiri with XML
 
 http://www.nokogiri.org/
 =======================================================================================
-http server test xml
+
+GS: ruby xml to json
+
+Use Crack
+https://github.com/jnunemaker/crack
+http://caseyscarborough.com/blog/2013/08/03/dead-simple-xml-and-json-parsing-in-ruby/
+
+require 'crack' # XML and JSON parsing
+require 'crack/json' # Only JSON parsing
+require 'crack/xml' # Only XML parsing
+
+response = Crack::XML.parse(File.read('food.xml'))
+# => {"menu"=>{"food"=>[{"name"=>"Waffles", "price"=>"5.95"}, {"name"=>"French Toast", "price"=>"4.50"}]}}
+
+response = Crack::JSON.parse(File.read('food.json'))
+# => {"menu"=>{"food"=>[{"name"=>"Waffles", "price"=>"5.95"}, {"name"=>"French Toast", "price"=>"4.50"}]}}
+
+
+
+=======================================================================================
+GS: http server test xml
 
 http://stackoverflow.com/questions/5725430/http-test-server-that-accepts-get-post-calls
 
