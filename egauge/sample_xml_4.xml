@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GeocodeResponse>
+ <status>OK</status>
+ <result>
+  <type>street_address</type>
+  <formatted_address>1400 Broadway, New York, NY 10018, USA</formatted_address>
+  <address_component>
+   <long_name>1400</long_name>
+   <short_name>1400</short_name>
+   <type>street_number</type>
+  </address_component>
+  <address_component>
+   <long_name>Broadway</long_name>
+   <short_name>Broadway</short_name>
+   <type>route</type>
+  </address_component>
+  <address_component>
+   <long_name>Midtown</long_name>
+   <short_name>Midtown</short_name>
+   <type>neighborhood</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>Manhattan</long_name>
+   <short_name>Manhattan</short_name>
+   <type>political</type>
+   <type>sublocality</type>
+   <type>sublocality_level_1</type>
+  </address_component>
+  <address_component>
+   <long_name>New York</long_name>
+   <short_name>New York</short_name>
+   <type>locality</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>New York County</long_name>
+   <short_name>New York County</short_name>
+   <type>administrative_area_level_2</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>New York</long_name>
+   <short_name>NY</short_name>
+   <type>administrative_area_level_1</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>United States</long_name>
+   <short_name>US</short_name>
+   <type>country</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>10018</long_name>
+   <short_name>10018</short_name>
+   <type>postal_code</type>
+  </address_component>
+  <geometry>
+   <location>
+    <lat>40.7528770</lat>
+    <lng>-73.9866900</lng>
+   </location>
+   <location_type>ROOFTOP</location_type>
+   <viewport>
+    <southwest>
+     <lat>40.7515280</lat>
+     <lng>-73.9880390</lng>
+    </southwest>
+    <northeast>
+     <lat>40.7542260</lat>
+     <lng>-73.9853410</lng>
+    </northeast>
+   </viewport>
+  </geometry>
+  <place_id>ChIJXSMDpqtZwokRex91-mt-_z4</place_id>
+ </result>
+</GeocodeResponse>
+<?xml version="1.0" encoding="UTF-8"?>
+<GeocodeResponse>
+ <status>OK</status>
+ <result>
+  <type>street_address</type>
+  <formatted_address>3800 Broadway, New York, NY 10032, USA</formatted_address>
+  <address_component>
+   <long_name>3800</long_name>
+   <short_name>3800</short_name>
+   <type>street_number</type>
+  </address_component>
+  <address_component>
+   <long_name>Broadway</long_name>
+   <short_name>Broadway</short_name>
+   <type>route</type>
+  </address_component>
+  <address_component>
+   <long_name>Upper Manhattan</long_name>
+   <short_name>Upper Manhattan</short_name>
+   <type>neighborhood</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>Manhattan</long_name>
+   <short_name>Manhattan</short_name>
+   <type>political</type>
+   <type>sublocality</type>
+   <type>sublocality_level_1</type>
+  </address_component>
+  <address_component>
+   <long_name>New York</long_name>
+   <short_name>New York</short_name>
+   <type>locality</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>New York County</long_name>
+   <short_name>New York County</short_name>
+   <type>administrative_area_level_2</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>New York</long_name>
+   <short_name>NY</short_name>
+   <type>administrative_area_level_1</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>United States</long_name>
+   <short_name>US</short_name>
+   <type>country</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>10032</long_name>
+   <short_name>10032</short_name>
+   <type>postal_code</type>
+  </address_component>
+  <geometry>
+   <location>
+    <lat>40.8346784</lat>
+    <lng>-73.9440078</lng>
+   </location>
+   <location_type>ROOFTOP</location_type>
+   <viewport>
+    <southwest>
+     <lat>40.8333294</lat>
+     <lng>-73.9453568</lng>
+    </southwest>
+    <northeast>
+     <lat>40.8360274</lat>
+     <lng>-73.9426588</lng>
+    </northeast>
+   </viewport>
+  </geometry>
+  <place_id>ChIJa_t8R4T2wokRKRv9MpcSAho</place_id>
+ </result>
+</GeocodeResponse>
+<?xml version="1.0" encoding="UTF-8"?>
+<GeocodeResponse>
+ <status>OK</status>
+ <result>
+  <type>street_address</type>
+  <formatted_address>11234 Broadway, Bronx, NY 10471, USA</formatted_address>
+  <address_component>
+   <long_name>11234</long_name>
+   <short_name>11234</short_name>
+   <type>street_number</type>
+  </address_component>
+  <address_component>
+   <long_name>Broadway</long_name>
+   <short_name>Broadway</short_name>
+   <type>route</type>
+  </address_component>
+  <address_component>
+   <long_name>Bronx</long_name>
+   <short_name>Bronx</short_name>
+   <type>political</type>
+   <type>sublocality</type>
+   <type>sublocality_level_1</type>
+  </address_component>
+  <address_component>
+   <long_name>Bronx County</long_name>
+   <short_name>Bronx County</short_name>
+   <type>administrative_area_level_2</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>New York</long_name>
+   <short_name>NY</short_name>
+   <type>administrative_area_level_1</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>United States</long_name>
+   <short_name>US</short_name>
+   <type>country</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>10471</long_name>
+   <short_name>10471</short_name>
+   <type>postal_code</type>
+  </address_component>
+  <address_component>
+   <long_name>2734</long_name>
+   <short_name>2734</short_name>
+   <type>postal_code_suffix</type>
+  </address_component>
+  <geometry>
+   <location>
+    <lat>40.8895273</lat>
+    <lng>-73.8981534</lng>
+   </location>
+   <location_type>RANGE_INTERPOLATED</location_type>
+   <viewport>
+    <southwest>
+     <lat>40.8881809</lat>
+     <lng>-73.8995112</lng>
+    </southwest>
+    <northeast>
+     <lat>40.8908788</lat>
+     <lng>-73.8968132</lng>
+    </northeast>
+   </viewport>
+   <bounds>
+    <southwest>
+     <lat>40.8895273</lat>
+     <lng>-73.8981710</lng>
+    </southwest>
+    <northeast>
+     <lat>40.8895324</lat>
+     <lng>-73.8981534</lng>
+    </northeast>
+   </bounds>
+  </geometry>
+  <partial_match>true</partial_match>
+  <place_id>EiQxMTIzNCBCcm9hZHdheSwgQnJvbngsIE5ZIDEwNDcxLCBVU0E</place_id>
+ </result>
+</GeocodeResponse>
