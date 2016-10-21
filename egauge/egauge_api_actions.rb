@@ -6,7 +6,8 @@ require 'awesome_print'
 require 'crack' 
 
 
-HOST_IP = '10.1.10.180'
+#HOST_IP = '10.1.10.180'
+HOST_IP = '73.189.206.34'
 DATA_SAVE_FOLDER = 'data_save'
 USER = 'owner'
 

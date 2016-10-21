@@ -1,3 +1,5 @@
 yong/
 installed_gem_docs/
 egauge/a.out
+egauge/tmp/
+egauge/data_save/

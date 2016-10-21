@@ -242,7 +242,7 @@ Define eGauge password in environment variable
 ylee@ylee-home-ubuntu:/media/sf_pj/md/nutomato/egauge$ vi ~/.profile 
 
 #for eGauge
-egauge_password='XXXXXXXXXXX'
+export egauge_password='XXXXXXXXXXX'
 
 =======================================================================================
 rest-client http authentication
@@ -250,13 +250,15 @@ http://stackoverflow.com/questions/3692574/how-do-i-do-basic-authentication-with
 
 
 =======================================================================================
-curl http://10.1.10.180//cgi-bin/egauge-show?a
+curl http://10.1.10.180/cgi-bin/egauge-show?a
 
-curl -u "owner:Ev2S9rsBZ7ASFsD" http://10.1.10.180//cgi-bin/egauge-show?a
+curl -u "owner:Ev2S9rsBZ7ASFsD" http://10.1.10.180/cgi-bin/egauge-show?a
 
-curl -u "owner:Ev2S9rsBZ7ASFsD" http://10.1.10.180//cgi-bin/egauge-show?a --digest
+curl -u "owner:Ev2S9rsBZ7ASFsD" http://10.1.10.180/cgi-bin/egauge-show?a --digest
 
-curl -u owner http://10.1.10.180//cgi-bin/egauge-show?a
+curl -u owner http://10.1.10.180/cgi-bin/egauge-show?a
+
+curl -u "owner:Ev2S9rsBZ7ASFsD" http://73.189.206.34/cgi-bin/egauge-show?a --digest
 =======================================================================================
 
 Curl Examples
@@ -270,7 +272,7 @@ HTTP Autentication info
 https://www.httpwatch.com/httpgallery/authentication/
 
 =======================================================================================
-restclit http digest authentication
+restclient http digest authentication
 
 https://evertpot.com/223/
 

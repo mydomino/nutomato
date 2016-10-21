@@ -70,7 +70,8 @@ end
 def xml_to_json
 
 	# Convert XML to JSON using Ruby and ActiveSupport
-	# to Run this, type: ruby egauge_data_query.rb  sample_xml_1.xml b.out
+	# to Run this, type: ruby egauge_data_query.rb  data/sample_xml_1.xml tmp/b.out
+
 
   require 'rubygems'
   require 'active_support'
@@ -105,7 +106,8 @@ end
 def xml_to_hash
 
 	# Convert XML to hash using XmlSimple
-	# to Run this, type: ruby egauge_data_query.rb  sample_xml_2.xml | tee c.out
+	# to Run this, type: ruby egauge_data_query.rb  data/sample_xml_1.xml | tee tmp/c.out
+
 
 
   require 'xmlsimple'
@@ -223,9 +225,9 @@ end
 
 
 
-with_default
+#with_default
 #with_xml()
 #with_crack_xml
 #xml_to_json
-#xml_to_hash
+xml_to_hash
 #retrieve_xml_structure
