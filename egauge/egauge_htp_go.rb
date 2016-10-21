@@ -1,13 +1,14 @@
 require_relative('egauge_htp') 
 
-
+#HOST_IP = '73.189.206.34'
+HOST_IP = '10.1.10.180'
 
 
 def get_instant_data
 
   begin
 
-  	eg = EguageHtp.new('73.189.206.34')
+  	eg = EguageHtp.new(HOST_IP)
   	query_param = {tot: '', inst: '', teamstat: '', v1: ''}
   	response = eg.get_instant_data(query_param)
 
@@ -37,7 +38,7 @@ def get_stored_data
 
   begin
 
-  	eg = EguageHtp.new('73.189.206.34')
+  	eg = EguageHtp.new(HOST_IP)
   	query_param = {}
   	response = eg.get_stored_data(query_param)
 

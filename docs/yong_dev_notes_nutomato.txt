@@ -220,7 +220,26 @@ https://github.com/javan/whenever
 
 =======================================================================================
 
-ruby read write xml example
+project gem setting - relate to run cron in root
+
+# find project gem environment info
+ylee@ylee-home-ubuntu:/media/sf_pj/md/nutomato/egauge$ gem env
+
+.......
+- SHELL PATH:
+     - /usr/local/heroku/bin
+     - /home/ylee/.rvm/gems/ruby-2.3.1@nutomato/bin
+     - /home/ylee/.rvm/gems/ruby-2.3.1@global/bin
+
+the gem is at
+/home/ylee/.rvm/gems/ruby-2.3.1@nutomato
+
+the wrapper is at
+/home/ylee/.rvm/gems/ruby-2.3.1@nutomato/wrappers
+
+the ruby executable is at
+/home/ylee/.rvm/gems/ruby-2.3.1@nutomato/wrappers/ruby
+
 
 
 =======================================================================================
@@ -277,12 +296,28 @@ restclient http digest authentication
 https://evertpot.com/223/
 
 =======================================================================================
+Ruby File operations
+
+2.3.1 :002 > a = File.expand_path("~ylee")
+ => "/home/ylee" 
+2.3.1 :003 > a = File.expand_path("~")
+ => "/home/ylee" 
+2.3.1 :004 > a = File.expand_path("~/data_save")
+ => "/home/ylee/data_save" 
+
 =======================================================================================
+ruby cron require_relative
+
+http://practicingruby.com/articles/ways-to-load-code
+=======================================================================================
+Configure Postfix to Use Gmail SMTP on Ubuntu
+
+https://easyengine.io/tutorials/linux/ubuntu-postfix-gmail-smtp/
+https://devops.profitbricks.com/tutorials/configure-a-postfix-relay-through-gmail-on-ubuntu/
 
 =======================================================================================
 
-=======================================================================================
-
+Unversal Plug and Play (UPNP)
 =======================================================================================
 
 =======================================================================================

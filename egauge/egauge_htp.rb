@@ -6,7 +6,7 @@ require 'crack'
 class EguageHtp
 	include HTTParty
 
-	DATA_SAVE_FOLDER = 'data_save' 
+	DATA_SAVE_FOLDER = 'data_save_2' 
 	
 	#debug_output STDOUT
 
@@ -81,9 +81,18 @@ class EguageHtp
 
   def save_data_to_file(file_prefix, data_str)
 
+    # check to see if the data folder exist, if not create it
+    full_path = File.expand_path("~/#{DATA_SAVE_FOLDER}")
+    puts "\nFull save path is: #{full_path}"
+
+    if !File.exist?(full_path) 
+      Dir.mkdir(full_path)
+      puts "\nPath #{full_path} was created."
+    end
+
   	date_time_str = (file_prefix == 'i') ? DateTime.now.strftime('%m-%d-%y%P') : DateTime.now.strftime('%m-%d-%y_%I-%M-%S%P')
     puts "\nTime is now #{date_time_str}"
-    file_name_path = DATA_SAVE_FOLDER + '/' + file_prefix + '-' + date_time_str + '.xml'
+    file_name_path = full_path + '/' + file_prefix + '-' + date_time_str + '.xml'
 
     # append the response to file with time-stamp as file name
     File.open(file_name_path, "a") do |file|
