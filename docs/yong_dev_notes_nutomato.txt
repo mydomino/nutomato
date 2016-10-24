@@ -309,6 +309,12 @@ Ruby File operations
 ruby cron require_relative
 
 http://practicingruby.com/articles/ways-to-load-code
+
+
+ylee@ylee-home-ubuntu:/media/sf_pj-3/md/nutomato/egauge$ crontab -l
+
+*/1 * * * * /home/ylee/.rvm/gems/ruby-2.3.1@nutomato/wrappers/ruby cron_test.rb >> /home/ylee/a.log 2>&1
+
 =======================================================================================
 Configure Postfix to Use Gmail SMTP on Ubuntu
 
@@ -320,6 +326,20 @@ https://devops.profitbricks.com/tutorials/configure-a-postfix-relay-through-gmai
 Unversal Plug and Play (UPNP)
 =======================================================================================
 
+GS: ruby require file.expand_path cron
+
+require File.expand_path(File.join(File.dirname(__FILE__), '..', 'app', 'workers', worker_file))
+
+
+#!/usr/bin/env ruby
+require File.expand_path('../config/environment',  __FILE__)
+
+
+#!/usr/bin/env ruby
+
+require File.expand_path('../config/environment', File.dirname(__FILE__))
+# or
+require "#{File.dirname(__FILE__)}/../config/environment"
 =======================================================================================
 
 =======================================================================================
