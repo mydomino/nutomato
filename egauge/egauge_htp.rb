@@ -6,7 +6,7 @@ require 'crack'
 class EguageHtp
 	include HTTParty
 
-	DATA_SAVE_FOLDER = 'data_save_2' 
+	DATA_SAVE_FOLDER = 'data_save' 
 	
 	#debug_output STDOUT
 

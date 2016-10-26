@@ -343,9 +343,59 @@ require File.expand_path('../config/environment', File.dirname(__FILE__))
 # or
 require "#{File.dirname(__FILE__)}/../config/environment"
 =======================================================================================
+GS: Ruby environment variables from cron
 
+https://www.phusionpassenger.com/library/indepth/environment_variables.html
+
+To make environment variables permanent for cron jobs, add those variables to the 
+relevant crontab. But note that inside crontabs you cannot refer to existing environment 
+variables with the $ syntax because crontabs are not shell scripts. You have to 
+specify the entire value.
+
+Example. 
+
+#
+# Define environment variables in crontab
+# Environment variable definitions
+egauge_password=EXXXXX
+#
+#
+# Run this every 10 minutes
+*/10 * * * * /home/ylee/.rvm/gems/ruby-2.3.1@nutomato/wrappers/ruby /media/sf_pj/md/nutomato/egauge/egauge_htp_save.rb  >> /home/ylee/egauge.log 2>&1 
+
+
+
+
+Example 2.
+# Environment variable definitions
+FOO=bar
+APXS2=/usr/sbin/apxs2
+
+# **WRONG!** You cannot refer to existing variables with the `$` syntax!
+PATH=/usr/bin:$PATH
+# **WRONG!** You cannot use the 'export' keyword!
+export PATH=/usr/bin:/usr/local/bin
+# Correct:
+PATH=/usr/bin:/usr/local/bin
+
+# Jobs:
+# m h  dom mon dow   command
+  * *  *   *   *     frobnicator
 =======================================================================================
+eGauge process setup to run saving data
 
+1. Set up cron job in user process 
+
+#
+# Define environment variables in crontab
+# Environment variable definitions
+egauge_password=EBBBBBBD
+#
+#
+# Run this every 10 minutes
+*/10 * * * * /home/ylee/.rvm/gems/ruby-2.3.1@nutomato/wrappers/ruby /media/sf_pj/md/nutomato/egauge/egauge_htp_save.rb  >> /home/ylee/egauge.log 2>&1 
+
+2. Data file is saved in user's home directory data_save folder (ie. ~/data_save)
 =======================================================================================
 
 =======================================================================================
