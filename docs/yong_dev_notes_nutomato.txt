@@ -398,7 +398,18 @@ egauge_password=EBBBBBBD
 2. Data file is saved in user's home directory data_save folder (ie. ~/data_save)
 =======================================================================================
 
+Comcast Xfinity Port Forwarding and find my external IP
+
+https://www.youtube.com/watch?v=Tpih6zB7k4I
+
+https://www.youtube.com/watch?v=5TRnX2RdPOQ#t=381.109888282
+
+https://www.youtube.com/watch?v=mKdICggYKIQ
+
 =======================================================================================
+
+JoeKnowTech
+https://www.youtube.com/channel/UCqAQBHnQ6nfb4QjzDYoDyvQ
 
 =======================================================================================
 
